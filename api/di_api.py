@@ -13,10 +13,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 
 creds = {
-    'host': '52.27.143.142',
+    'host': '****',
     'db': 'DATA_INTEGRATION',
-    'user': 'root',
-    'passwd': 'weather@123'
+    'user': '****',
+    'passwd': '****'
 }
 
 if platform.node().startswith("ip-"):
@@ -26,7 +26,7 @@ if platform.node().startswith("ip-"):
 else:
     key_path = ('/home/reconnect/Keys/DIKey.pem')
 user = 'ubuntu'
-host = '34.209.114.102'
+host = '****'
 key = paramiko.RSAKey.from_private_key_file(key_path)
 
 #COMMAND = """sudo /home/ubuntu/.pyenv/versions/data_integration/bin/python /home/ubuntu/external_pipelines/generation_substations/script/controllers/Realtime_Integrator.py"""
